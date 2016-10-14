@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Ejercicio 14</title>
+    <style media="screen">
+
+div{
+  padding-top: 0.7em;
+}
+input{
+  border-radius: 5px;
+}
+
+div label{
+  width: 15%;
+  float:left;
+}
+
+div input:focus{
+  outline: inherit;
+  border: 1px solid #848484;
+  background-color:#A4A4A4;
+}
+
+.nota{
+  font-style: italic;
+  border: 1px dashed black;
+  width: 100%;
+  height: 30px;
+  margin-left: 1px;
+}
+.radio{
+  margin-left: -115px;
+}
+
+    </style>
+  </head>
+  <body>
+<h1>Ejercicio 14</h1>
+
+<fieldset> <legend>Incripcion</legend>
+  <fieldset> <legend>Informacion personal</legend>
+
+    <div>
+    <label>Nombre*:</label>
+    <input type="text" name="nombre" placeholder="Introduce el nombre..." required>
+    </div>
+
+    <div>
+    <label>Apellidos*:</label>
+    <input type="password" name="password" required>
+    </div>
+
+    <div>
+    <label>Email*:</label>
+    <input type="text" name="nombre" required>
+    </div>
+
+    <div>
+    <label>Sexo:</label>
+    <label>Hombre: <input type="radio" name="radio1"> </label>
+    <label>Mujer:   <input type="radio" name="radio2"></label>
+    </div>
+
+    <br>
+    <div>
+    <label>Fecha nacimiento*:</label>
+    <input type="text" name="fecha" placeholder="dd/mm/aaaa" required>
+    </div>
+
+    <div>
+    <label>Poblacion:</label>
+    <select class="provincia">
+           <option value="option">Escoge provincia</option>
+           <option value="option">Valencia</option>
+           <option value="option">Castellon</option>
+           <option value="option">Alicante</option>
+         </select>
+    </div>
+
+    <div>
+    <label>Telefono:</label>
+    <input type="text" name="telefono">
+    </div>
+
+    <div>
+    <label>Motivo de inscripcion*:</label>
+    <textarea rows="2" cols="100" id="inscription" scrolling="true"></textarea>
+    </div>
+
+    <div>
+    <label>Escoge el color de tu avatar:</label>
+    <input type="color" name="color">
+    </div>
+
+
+
+</fieldset>
+<fieldset> <legend>Creación de Usuarios</legend>
+  <div>
+  <label>Nombre de usuario*:</label>
+  <input type="text" name="nombreUser" required>
+  </div>
+
+  <div>
+  <label>Contraseña*:</label>
+  <input type="password" name="contraseñaUser" required>
+  </div>
+
+  <div>
+  <label>Repite contraseña*:</label>
+  <input type="password" name="recontraseña" required>
+</div>
+
+</fieldset>
+
+<input type="checkbox" name="correos"><label>Deseo recibir copias de los mensajes del foro en mi correo electronico</label>
+<br>
+
+<input type="checkbox" name="eventos"><label>Deseo recibir notificaciones de los proximos eventos en mi correo electronico</label>
+<br>
+
+<input type="button" name="Confirmar registro" value="Confirmar registro">
+<br>
+<br>
+<input type="text" name="nota" class="nota" placeholder="Nota: los campos marcados con "" son obligatorios">
+<br>
+
+</fieldset>
+
+  </body>
+</html>
