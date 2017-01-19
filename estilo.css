@@ -142,3 +142,11 @@ a:focus, a:hover {
   position: absolute;
   top: -5000px;
 }
+table{
+	border:2px solid black;
+}
+
+#tortillas{
+	position: absolute;
+	top: -5000px;
+}
